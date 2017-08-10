@@ -80,6 +80,7 @@ data-target="#exampleModal"  >New User</button>
       </div>
       <div class="modal-body">
         <form id="form_user">
+            <input id="user-id">
           <div class="form-group">
             <label for="user-name" class="control-label">Username:</label>
             <input type="text" class="form-control" id="user-name" name="username" autocomplete="off">

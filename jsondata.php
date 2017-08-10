@@ -8,7 +8,7 @@ require_once("inc/dbconnect.php");
 if(isset($_POST['action']) && $_POST['action']=="list"){
 	
 	
-	$per_page = 3;  // ตัวแปรเก็บจำนวนรายการที่่ต้องการแสดงในแต่ละหน้า (เปลี่ยนค่าได้)
+	$per_page = 2;  // ตัวแปรเก็บจำนวนรายการที่่ต้องการแสดงในแต่ละหน้า (เปลี่ยนค่าได้)
 	
 	// รายการต่อไปนี้ไม่ต้องเปลี่ยนค่า
 	$total = 0; // ตัวแปรจำนวนข้อูลทั้งหมด
@@ -18,7 +18,7 @@ if(isset($_POST['action']) && $_POST['action']=="list"){
 	
 	// คำสั่ง sql เปลี่ยนค่าตามต้องการ
 	$sql = "
-	 SELECT * FROM tbl_members WHERE 1
+	 SELECT * FROM tbl_members 
 	";
 	
 	// รายการต่อไปนี้ไม่ต้องเปลี่ยนค่า
